@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+  body{
+    background-color: #000000;
+  }
+  *{
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+  }
+
+  #titulo{
+   margin-bottom: 40px;
+   margin-top: 20px;
+  }
+
+  div{
+    display: block;
+    margin: 20px;
+  }
+  r{color: red;}
+  v{color: white;}
+</style>
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script><script async src='/cdn-cgi/bm/cv/669835187/api.js'></script><script async src='/cdn-cgi/bm/cv/669835187/api.js'></script><script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<body> 
+ 
+  <div>
+    <p><v>MOVIMENTAÇÃO:</v> <r>SETAS DIRECIONAIS</r> <p>
+    <p><v>RECOMEÇAR AO MORRER:</v> <r>ESPAÇO</r></p>
+  </div>
+<canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;">
+        Your browser does not suport canvas
+    </canvas>
+</div>
+
+    
+    
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d55e5c6c9cdf5db',m:'ZjfJzputCsIApT1btiVGrDHxtQuSIzn_gqVLgf2qOZM-1643495348-0-AfhfNvd4KIyjaSzjE8G8VjdGAtbkRXkLtYPWb5+pP09L1GhxJNtbnlggir+s0wonHqPTkACglzqwaFCxmV3NU+qyWVAq2OiForg1gsVDUixcPsbAYDH2D1x+fc+wjFsM9ThW8FPQD3WK9DvF4hLqvAFGrYcOglDBfWSbVUZEEi47MXJRJ6TvMSUAmJTn6S02XiUE7PfzC94LR7VRhCN4D7o=',s:[0x76e0dc5a50,0xfdacacf8bf],}})();</script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d58cc6f796a6b0f',m:'_J98iymBbu.W0DQhv0Nm5ldO50KxlXfAmyHq67JqA3Y-1643525767-0-AZANUsmo1OrVXD7lD++TM7tuqXuJ726QTZ4GXHeegmq/Ua4W0wI/Vh+I/l8S/MmqhBE1WWtC3gDYdJIGSUqEnO86DSYEOyYVAWbUdcFRbkT28N64Qcjm5nNgFf+zpPMO5s+keOwH+OS1drhJ8q6/Z9g9fdq92Mc/nR2W6bCSZ3fQ5BwpQGCx49mucCdUBi8MybeHJHhYPsDK+RRuw2Rtr9c=',s:[0xcbd46b5e9a,0xed645c9ad8],}})();</script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d74f4809df92737',m:'1GjReGnTNXqGXN0vqb8fB2dvrpkGfVCLCqNcKgkVSw8-1643821010-0-Acsyz8bh44ycUe1rAJuNjqCaHevDyHBZ2hlbo+zmO++NVvS3MdV5wqIoKTqsMwvMldrHuAEYgQo2MQy1X549immHoP2y71B11PXRPyIJLqHAGaryalKLSjeVQ3EopQiQtzI95CVdWV+6WEin0nl47Ki0T+h+HKqqgjVzYH1d6Gcx0HYpHQ30JuHj2YES1bgfRC6bLrUCBBjOUXfcvE3nvL0=',s:[0x4d3fa10875,0x710ee2e485],}})();</script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d7ce5aba969f627',m:'IWfd4Mti5E3hjgRWT3E1CtwcBl1dy3QGbWeYOylF9Pc-1643904288-0-AVeiDYiwW/dPj1dMuuiqHKKwrZf2B9FLCkCqJsGPVYO1/ybcvE6Iea2YW7em7qGGR1avAujYD4Fr5kNKsyW3m4rryXS4UvteF3ipZZ85N8IDGsSd5QH9MoUk8z/Xrg6eCpqTFmBAWpfQ+I4e6vZj3iFzDKR3f3g3qydu6uBpar4nSAh0h7UpTpklh9IVTP+r2w==',s:[0x05fa6d2b1f,0xed7d1bf738],}})();</script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d7fb5c0ebe9cf9e',m:'Y2SLRkzHSskW.8_TYOsitCVpnpM0Rt55aWdKCoGiowk-1643933783-0-ATjQngCMUpFVXX+HWhDFh88oJRTizPQSi6y8e4ytVbTma2ebDmxM+gpQfWjdMoMpmlSsObnVulnJRRSiPLqg7BLOR1MOEDoTQtolZvg3H1kCXsr3tnshFZemD5I/sdsD9AyOx6rZNdRxK6aeeEA7yg6euFdUga25t2STg2SN/3iwiI0qwdYBUWqhq0Jt80YZlQ==',s:[0x1a954cbce3,0xf9b21dd29f],}})();</script></body>
+<script>
+    
+    key = false;
+    colidiu=false;
+
+
+window.addEventListener('keydown', function (e) {
+    key = e.keyCode;
+})
+window.addEventListener('keyup', function (e) {
+    key = false;
+})
+
+
+
+setInterval(Animação,10);
+
+var canvas = document.getElementById("myCanvas")
+var ctx = canvas.getContext("2d")
+
+
+var Player = new component(50,50,"red",50,200);
+
+var velocidadeX = 0;
+var velocidadeY = 0;
+var tempo = 0;
+var fase = 1;
+
+var obstaculos = []
+var score = 0
+var aperteiEspaco = false
+
+
+function component(width, height, color, x, y,contei=false) {
+    ctx.save()
+    this.contei = contei
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;
+    this.color = color;
+    this.crashWith = function(otherobj) {
+        var myleft = this.x;
+        var myright = this.x + (this.width);
+        var mytop = this.y;
+        var mybottom = this.y + (this.height);
+        var otherleft = otherobj.x;
+        var otherright = otherobj.x + (otherobj.width);
+        var othertop = otherobj.y;
+        var otherbottom = otherobj.y + (otherobj.height);
+        var crash = true;        
+        if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+            crash = false;
+        }
+        return crash;
+    }
+    ctx.restore()
+  }
+
+function Animação(){
+
+    checarkey()
+    limpar()
+    movimento()
+    if(tempo%200==0){
+      criarObstaculo()
+    }
+
+    tempo +=1;
+
+    for (i = 0; i < obstaculos.length; i += 1) {
+        if (Player.crashWith(obstaculos[i])) 
+            {                                    
+             //console.log("colidiu");   
+             //COLOQUE AQ OQ ACONTECE NA COLISAO;                         
+        } 
+    }
+
+    mostrarScore()
+
+    if (score < 0) {gameOver()}
+    if(aperteiEspaco == true && score< 0){resetar()}
+    aperteiEspaco = false
+    if(tempo>4000){fase=2}
+    if(tempo>8000){fase=3}
+    
+}
+
+function limpar(){   
+        ctx.save()
+        ctx.fillStyle = "white"
+        ctx.fillRect(0,0,canvas.height,canvas.width)
+        ctx.restore()   
+      }
+
+
+
+function movimento(){
+ 
+  // PLAYER
+
+  ctx.save()
+  
+  Player.y += velocidadeY
+  Player.x += velocidadeX
+
+  velocidadeX=0;velocidadeY=0;
+  ctx.fillStyle = Player.color
+  ctx.fillRect(Player.x,Player.y,50,50)
+
+
+  ctx.restore()
+
+  //OBSTACULOS
+  obstaculos.map(moverObstaculos)
+  obstaculos.map(desenhaObstaculos)
+  
+}
+
+
+function criarObstaculo(){
+
+
+  let buraco = Math.random()
+  
+  
+
+      if (buraco<0.2){
+        obstaculos.push(new component(50,500,"blue",600,100))
+      }else
+      if (0.2<buraco<0.4){
+        obstaculos.push(new component(50,100,"blue",600,0))
+        obstaculos.push(new component(50,500,"blue",850,200))
+      }else
+      if (0.4<buraco<0.6){
+        obstaculos.push(new component(50,200,"blue",600,0))
+        obstaculos.push(new component(50,500,"blue",850,300))
+      }else 
+      if (0.6<buraco<0.8){
+        obstaculos.push(new component(50,300,"blue",600,0))
+        obstaculos.push(new component(50,500,"blue",850,400))
+      }else
+      if (0.8<buraco){
+        obstaculos.push(new component(50,500,"blue",600,200))
+      }
+      
+  
+
+
+
+
+
+}
+
+function desenhaObstaculos(a){
+
+ctx.save()
+ctx.fillStyle = a.color
+ctx.fillRect(a.x, a.y, a.width, a.height)
+ctx.restore()
+
+}
+
+function moverObstaculos(a){
+  a.x = a.x - 2*(fase)
+
+
+  if(a.contei==false && a.x<Player.x){score+=1;  a.contei = true;} 
+  else if (a.contei==false && Player.crashWith(a)==true ){score-=1; a.contei=true}
+  
+  
+  
+
+  if(obstaculos.length>8){obstaculos.shift()}
+  
+  }
+
+
+
+
+// CONTROLES
+
+
+function checarkey(){
+
+  if (key == 37 && Player.x>0) {velocidadeX = -2*(fase); }
+  if (key == 39 && Player.x<450) {velocidadeX = 2*(fase); }
+  if (key == 38 && Player.y>0) {velocidadeY = -2*(fase); }
+  if (key == 40  && Player.y<450) {velocidadeY = 2*(fase); }
+  if (key == 32) {aperteiEspaco = true; }
+
+}
+
+function mostrarScore(){
+    ctx.save()
+    ctx.font = "30px Arial";
+    ctx.fillStyle = "black";
+    ctx.fillText('Score: '+ score, 300, 35);
+    ctx.fillText('Fase: '+ fase, 100, 35);
+    ctx.restore()
+
+}
+
+function gameOver(){
+        score -= 1000;
+        ctx.save()
+        ctx.fillStyle = "black"
+        ctx.fillRect(0,0,canvas.height,canvas.width)
+        ctx.font = "50px Arial";
+        ctx.fillStyle = "white";
+        ctx.fillText("Game Over",125,250)
+        ctx.font = "20px Arial";
+        ctx.fillText("(Aperte espaço para resetar)",125,400)
+        ctx.restore()
+      }
+
+function resetar(){
+
+score = 0
+obstaculos = []
+Player.x = 50
+Player.y = 200
+tempo = 0
+
+}
+
+</script>
+</html>
